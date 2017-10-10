@@ -9,13 +9,6 @@ package practiceproject;
  *
  * @author tjones61
  */
-public class PracticeProject {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class MSSQLServerDatabase {
     
 }
