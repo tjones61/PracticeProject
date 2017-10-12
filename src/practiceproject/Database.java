@@ -48,6 +48,19 @@ public class Database {
                 break;
             }
         }
+        return found;
+    }
+    
+    public final Product findProductByName(String name){
+        Product found = null;
+
+        for(Product p:products){
+            if(p.getProductName().toLowerCase().equals(name.toLowerCase())){
+                found=p;
+                break;
+            }
+        }
+        return found;
     }
     
     }
