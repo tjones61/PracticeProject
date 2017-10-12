@@ -15,13 +15,14 @@ public class Product {
     private String productName;
     private String description;
     private double price;
-    private Discount discount;
+    private double discount;
 
-    public Product(int productID, String productName, String description, double price, Discount discount) {
+    public Product(int productID, String productName, String description, double price, double discount) {
         this.setProductID(productID);
         this.setProductName(productName);
         this.setDescription(description);
         this.setPrice(price);
+        this.setDiscount(discount);
     }
 
     public final int getProductID() {
@@ -68,12 +69,15 @@ public class Product {
         this.price = price;
     }
 
-    public Discount getDiscount() {
+    public final double getDiscount() {
         return discount;
     }
 
-    public void setDiscount(Discount discount) {
-        this.discount = discount;
+    public final void setDiscount(double discount) {
+        if (discount <0 || discount>1) {
+            throw new IllegalArgumentException("This is not a valid discount");
+        }
+        this.discount = Discount(discount);
     }
 
 }
