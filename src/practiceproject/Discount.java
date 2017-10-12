@@ -9,6 +9,6 @@ package practiceproject;
  *
  * @author tjones61
  */
-public class Discount {
+public interface Discount {
     
 }

@@ -9,6 +9,6 @@ package practiceproject;
  *
  * @author tjones61
  */
-public class FlatAmtDiscount {
+public class FlatAmtDiscount implements Discount(){
     
 }

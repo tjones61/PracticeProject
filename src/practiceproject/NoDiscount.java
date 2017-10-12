@@ -9,6 +9,6 @@ package practiceproject;
  *
  * @author tjones61
  */
-public class NoDiscount {
+public class NoDiscount implements Discount(){
     
 }
