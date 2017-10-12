@@ -9,6 +9,16 @@ package practiceproject;
  *
  * @author tjones61
  */
-public class FlatAmtDiscount implements Discount(){
+public class FlatAmtDiscount implements Discount {
+    private double flatAmtDiscount;
     
+    public FlatAmtDiscount(double flatAmtDiscount) {
+        this.flatAmtDiscount = flatAmtDiscount;
+    }
+    
+    public double getDiscountAmt(double unitCost, int qty) {
+        return qty * flatAmtDiscount;
+    }
+    
+ 
 }

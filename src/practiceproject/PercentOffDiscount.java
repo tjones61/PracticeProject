@@ -9,6 +9,14 @@ package practiceproject;
  *
  * @author tjones61
  */
-public class PercentOffDiscount implements Discount(){
+public class PercentOffDiscount implements Discount {
+    private double percentOff;
     
+    public PercentOffDiscount(double percentOff) {
+        this.percentOff = percentOff;
+    }
+    
+    public double getDiscountAmt(double unitCost, int qty) {
+        return unitCost * qty * percentOff;
+    }
 }

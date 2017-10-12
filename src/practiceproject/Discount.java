@@ -10,5 +10,5 @@ package practiceproject;
  * @author tjones61
  */
 public interface Discount {
-    
+    public abstract double getDiscountAmt(double unitCost, int qty);
 }

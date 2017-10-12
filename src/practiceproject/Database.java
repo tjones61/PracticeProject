@@ -56,12 +56,14 @@ public class Database {
 
         for(Product p:products){
             if(p.getProductName().toLowerCase().equals(name.toLowerCase())){
+            }
                 found=p;
                 break;
             }
-        }
         return found;
-    }
+        }
+        
     
-    }
+}
+
 

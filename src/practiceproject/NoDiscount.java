@@ -9,6 +9,11 @@ package practiceproject;
  *
  * @author tjones61
  */
-public class NoDiscount implements Discount(){
+public class NoDiscount implements Discount {
+
+    @Override
+    public double getDiscountAmt(double unitCost, int qty) {
+        return 0;
+    }
     
 }

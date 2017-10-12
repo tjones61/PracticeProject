@@ -10,5 +10,6 @@ package practiceproject;
  * @author tjones61
  */
 public class QtyPercentOffDiscount implements Discount(){
-    
+    //if buy 5 10 off
+//if buy 10 10 off
 }
